@@ -35,6 +35,9 @@ query2frame(query, dataDir);
 ## Demo
 We have developed a small GUI demo in MATLAB for Unix systems. To play with it run the ```demo_gui.m``` code.
 
+![alt text](https://github.com/noagarcia/dresstar/blob/master/Demo/demo.png?raw=true)
+
+
 ## Citation
 This code is the MATLAB's implementation of the paper "Dress lika a Star: Retrieving Fashion Products from Videos" published in the [Proceedings of the Computer Vision for Fashion Workshop][4] at ICCV 2017.
 
