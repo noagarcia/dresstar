@@ -23,6 +23,7 @@ function [frame, videoName] = query2frame(query, dataDir, optsin)
 %     videoName:    name of the retrieved video
 %
 %   MATLAB code for "Dress lika a Star: Retrieving Fashion Products from Videos"
+%   This version of the code is not optimized to run efficiently
 %
 %   Citation:
 %     N. Garcia, G. Vogiatzis. Dress like a Star: Retrieving Fashion Products from Videos. In ICCVW 2017.

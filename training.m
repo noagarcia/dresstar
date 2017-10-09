@@ -24,6 +24,7 @@ function [keyfeaturesTotal, indexMatTotal, tree] = training(videoDir, dataDir, o
 %     - opts.sl                 size of leaf nodes in the kdtree [100]
 %
 %   MATLAB code for "Dress lika a Star: Retrieving Fashion Products from Videos"
+%   This version of the code is not optimized to run efficiently
 %
 %   Citation:
 %     N. Garcia, G. Vogiatzis. Dress like a Star: Retrieving Fashion Products from Videos. In ICCVW 2017.
