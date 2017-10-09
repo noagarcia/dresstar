@@ -27,6 +27,7 @@ function [frame, videoName] = query2frame(query, dataDir, optsin)
 %   Citation:
 %     N. Garcia, G. Vogiatzis. Dress like a Star: Retrieving Fashion Products from Videos. In ICCVW 2017.
 
+addpath('src/');
 
 % Parameters
 opts.width = 720;

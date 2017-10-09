@@ -20,7 +20,7 @@ function [keyfeaturesTotal, indexMatTotal, tree] = training(videoDir, dataDir, o
 %     - opts.distPix:           maximum pixel distance between features [100]
 %     - opts.minTrackLength     minimum number of frames in a track [7]
 %     - opts.thumbs             bool to save thumbnails of the video frames [false]
-%     - opts.thumbsRes          ressolution of thumbnail images [120]
+%     - opts.thumbsRes          ressolution of thumbnail images [160]
 %     - opts.sl                 size of leaf nodes in the kdtree [100]
 %
 %   MATLAB code for "Dress lika a Star: Retrieving Fashion Products from Videos"
@@ -28,6 +28,7 @@ function [keyfeaturesTotal, indexMatTotal, tree] = training(videoDir, dataDir, o
 %   Citation:
 %     N. Garcia, G. Vogiatzis. Dress like a Star: Retrieving Fashion Products from Videos. In ICCVW 2017.
 
+addpath('src/');
 
 % Parameters
 opts.width = 720;
@@ -37,7 +38,7 @@ opts.distPix = 100;
 opts.maxFramesFile = 1500;
 opts.minTrackLength = 7;
 opts.thumbs = false;
-opts.thumbsRes = 120;
+opts.thumbsRes = 160;
 opts.sl = 100;
 
 if nargin == 3  
@@ -101,7 +102,7 @@ for ivid = 1:length(lsvid)
 
         % Save thumbnail
         if opts.thumbs
-            frame = imresize(frame, [NaN 160]);
+            frame = imresize(frame, [NaN opts.thumbsRes]);
             imwrite(frame, sprintf('%sframe%08d.png', dirThumbs, ii));
         end
         clearvars frame;
