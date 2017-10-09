@@ -8,26 +8,31 @@ MATLAB code for "Dress lika a Star: Retrieving Fashion Products from Videos" pap
 
 
 ## Usage
-- Add mexopencv MEX functions within MATLAB:
+1. Add mexopencv MEX functions to MATLAB path:
 
 ``` matlab
 addpath('/path/to/mexopencv');
 addpath('/path/to/mexopencv/opencv_contrib');
 ```
 
-- Add some videos to ```/path/to/videos``` folder
-- Training. Run ```training.m``` to extract features and create the kdtree.
+2. Training. Run ```training.m``` to extract features and create the model.
 
 ``` matlab
-videoDir = 'Demo/Videos/';
-dataDir  = 'Demo/Data/';
+videoDir = '/path/to/videos';
+dataDir  = '/path/to/data';
 training(videoDir, dataDir);
 ```
 
-- Testing. Run ```query2frame.m``` to match a query image with a dataset frame.
+3. Testing. Run ```query2frame.m``` to match a query image with a dataset frame.
+
+``` matlab
+query = imread('/path/to/query.png');
+dataDir  = '/path/to/data';
+query2frame(query, dataDir);
+```
 
 ## Demo
-You can play with our demo.
+We have developed a small GUI demo in MATLAB for Unix systems. To play with it run the ```demo_gui.m``` code.
 
 ## Citation
 This code is the MATLAB's implementation of the paper "Dress lika a Star: Retrieving Fashion Products from Videos" published in the [Proceedings of the Computer Vision for Fashion Workshop][4] at ICCV 2017.
