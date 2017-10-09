@@ -84,7 +84,7 @@ function pushbutton3_Callback(hObject, eventdata, handles)
 % handles    structure with handles and user data (see GUIDATA)
 
 % Info
-text_to_show = sprintf('Building the model for videos.\nIt may take a while.');
+text_to_show = sprintf('Building the model.\nIt may take a while.');
 set(handles.infotext,'String',text_to_show);
 drawnow;
 
