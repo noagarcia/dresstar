@@ -1,5 +1,5 @@
 # Dress like a Star: Retrieving Fashion Products from Videos
-MATLAB code for "Dress lika a Star: Retrieving Fashion Products from Videos" paper.
+MATLAB code for "Dress like a Star: Retrieving Fashion Products from Videos" paper.
 This version of the code is not optimized to run efficiently.
 
 ## Prerequisites 
